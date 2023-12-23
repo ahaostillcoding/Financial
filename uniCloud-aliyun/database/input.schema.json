@@ -1,0 +1,33 @@
+{
+  "bsonType": "object",
+  "required": ["money"],
+  "permission": {
+    "read": true,
+    "create": true,
+    "update": true,
+    "delete": true
+  },
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+	"userID": {
+	  "description": "用户ID"
+	},
+    "money": {
+    	 "description" : "收入金额"
+   },
+    "remark": {
+    	 "description" : "备注"
+  	},
+     "tag": {
+    	 "description" : "标签"
+  	},
+	"tagUrl": {
+		 "description" : "标签图标"
+	},
+     "datetime": {
+    	"description" : "时间"
+  	}  
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "addInput",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

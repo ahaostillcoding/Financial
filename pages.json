@@ -1,0 +1,135 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path": "pages/tabbar/detail/detail",
+			"style": {
+				"navigationBarTitleText": "阿豪记账",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/tabbar/chart/chart",
+			"style": {"navigationBarTitleText": "图表"}
+		},
+		{
+			"path": "pages/tabbar/tabbar-3/tabbar-3",
+			"style": {"navigationBarTitleText": "添加"}
+		},
+		{
+			"path": "pages/tabbar/manage/manage",
+			"style": {"navigationBarTitleText": "数据管理"}
+		},
+		{
+			"path": "pages/tabbar/user/user",
+			"style": {"navigationBarTitleText": ""}
+		},
+		{
+			"path": "pages/tabbar-3-detial/input/input",
+			"style": {"navigationBarTitleText": "收入"}
+		},
+		{
+			"path": "pages/tabbar-3-detial/input/modify",
+			"style": {"navigationBarTitleText": "收入修改"}
+		},
+		{
+			"path": "pages/tabbar-3-detial/output/output",
+			"style": {"navigationBarTitleText": "支出"}
+		},
+		{
+			"path": "pages/tabbar-3-detial/output/modify",
+			"style": {"navigationBarTitleText": "支出修改"}
+		},
+		{
+			"path" : "pages/registered/registered",
+			"style" : 
+			{
+				"navigationBarTitleText" : "注册",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/tabbar/user/setting",
+			"style" : 
+			{
+				"navigationBarTitleText" : "设置",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/tabbar/user/admin",
+			"style" : 
+			{
+				"navigationBarTitleText" : "账号设置",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/tabbar/user/help",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"color": "#000000",
+		// "selectedColor": "#00ffff",
+		"list": [{
+				"pagePath": "pages/tabbar/detail/detail",
+				"iconPath": "static/img/tabbar/detail.png",
+				"selectedIconPath": "static/img/tabbar/detailactive.png",
+				"text": "明细"
+			},
+			{
+				"pagePath": "pages/tabbar/chart/chart",
+				"iconPath": "static/img/tabbar/chart.png",
+				"selectedIconPath": "static/img/tabbar/chartavtive.png",
+				"text": "图表"
+			},
+			//#ifdef MP-WEIXIN
+			{
+				"pagePath": "pages/tabbar/tabbar-3/tabbar-3",
+				"iconPath": "static/img/tabbar/add.png",
+				"selectedIconPath": "static/img/tabbar/addactive.png",
+				"text": "添加"
+			},
+			//#endif
+			//#ifndef MP-WEIXIN
+			{
+				"pagePath": "pages/tabbar/tabbar-3/tabbar-3",
+				"iconPath": "static/img/tabbar/add.png",
+				"selectedIconPath": "static/img/tabbar/addactive.png"
+			},
+			//#endif
+			{
+				"pagePath": "pages/tabbar/manage/manage",
+				"iconPath": "static/img/tabbar/plan.png",
+				"selectedIconPath": "static/img/tabbar/planactive.png",
+				"text": "管理"
+			},
+			{
+				"pagePath": "pages/tabbar/user/user",
+				"iconPath": "static/img/tabbar/me.png",
+				"selectedIconPath": "static/img/tabbar/meactive.png",
+				"text": "我"
+			}
+		]
+	}
+}
