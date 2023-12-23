@@ -7,10 +7,10 @@ import oss2
 
 app = FastAPI()
 
-access_key_id = "LTAI5t6A3MfeDTCMkvR4vevV"
-access_key_secret = "s4CLZLvPZvMaF0AXdc55ENgQ6msQOu"
-bucket_name = "digitalhuman1"
-endpoint = "oss-cn-beijing.aliyuncs.com"
+access_key_id = ""
+access_key_secret = ""
+bucket_name = ""
+endpoint = ""
 
 
 @app.post("/json")
@@ -25,12 +25,12 @@ async def process_json(json_data: dict):
         with open(filename, 'w') as file:
             file.write(json_string)
         # 上传OSS
-        # auth = oss2.Auth(access_key_id, access_key_secret)
-        # bucket = oss2.Bucket(auth, endpoint, bucket_name)
-        # bucket.put_object_from_file(filename, filename)
-        # # 文件URL
-        # url = f"https://{bucket_name}.{endpoint}/{filename}"
-        # print(url)
+        auth = oss2.Auth(access_key_id, access_key_secret)
+        bucket = oss2.Bucket(auth, endpoint, bucket_name)
+        bucket.put_object_from_file(filename, filename)
+        # 文件URL
+        url = f"https://{bucket_name}.{endpoint}/{filename}"
+        print(url)
 
         # return {"url": url}
     except Exception as e:

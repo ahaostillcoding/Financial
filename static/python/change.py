@@ -6,10 +6,10 @@ import oss2
 
 app = FastAPI()
 
-access_key_id = "LTAI5t6A3MfeDTCMkvR4vevV"
-access_key_secret = "s4CLZLvPZvMaF0AXdc55ENgQ6msQOu"
-bucket_name = "digitalhuman1"
-endpoint = "oss-cn-beijing.aliyuncs.com"
+access_key_id = ""
+access_key_secret = ""
+bucket_name = ""
+endpoint = ""
 
 
 @app.post("/json")
